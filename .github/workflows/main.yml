@@ -35,7 +35,7 @@ jobs:
          echo "SONAR_PROJECT_KEY=${{ secrets.SONAR_PROJECT_KEY }}"
          echo "SONAR_ORGANIZATION=${{ secrets.SONAR_ORGANIZATION }}"
          echo "SONAR_TOKEN=${{ secrets.SONAR_TOKEN }}"
-         sonar-scanner -Dsonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }} -Dsonar.organization=${{ secrets.SONAR_ORGANIZATION }} -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+         sonar-scanner -X -Dsonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }} -Dsonar.organization=${{ secrets.SONAR_ORGANIZATION }} -Dsonar.login=${{ secrets.SONAR_TOKEN }}
 
 
 
